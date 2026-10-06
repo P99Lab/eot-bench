@@ -735,10 +735,8 @@ in the batch do not change its score.
 
 `P99LabTurn1Adapter` scores with
 [`p99lab/turn-1`](https://huggingface.co/p99lab/turn-1), which averages two
-estimates built on the open Qwen3-ASR speech encoders
-([`Qwen/Qwen3-ASR-1.7B`](https://huggingface.co/Qwen/Qwen3-ASR-1.7B) and
-[`Qwen/Qwen3-ASR-0.6B`](https://huggingface.co/Qwen/Qwen3-ASR-0.6B), Apache-2.0,
-downloaded from their own repositories). It uses up to 8 seconds of recent audio
+estimates built on two open speech encoders (Apache-2.0, downloaded from
+their own repositories). It uses up to 8 seconds of recent audio
 and the last assistant message from `messages`, never the words of the turn
 under judgement. It runs in float32; use a CUDA GPU with 20 GB.
 

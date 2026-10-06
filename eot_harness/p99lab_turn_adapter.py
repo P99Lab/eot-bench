@@ -13,9 +13,9 @@ SAMPLE_RATE = 16_000
 class P99LabTurn1Adapter:
     """Score causal user audio with p99lab turn-1.
 
-    turn-1 averages two estimates built on the open Qwen3-ASR speech encoders
-    (`Qwen/Qwen3-ASR-1.7B` and `Qwen/Qwen3-ASR-0.6B`, Apache-2.0), which the
-    `p99turn1` package downloads from their own repositories. It hears up to
+    turn-1 averages two estimates built on two open speech encoders
+    (Apache-2.0), which the `p99turn1` package downloads from their own
+    repositories. It hears up to
     8 seconds of recent audio and reads the last assistant message. It never
     reads the words of the turn under judgement.
     """
